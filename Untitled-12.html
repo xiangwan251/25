@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+        function openWin() {
+            myWindow = window.open('', '', 'width=300,height=200');
+            myWindow.document.write('<form><h2>游客！你好</h2><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit"  value="登录"> ');
+            myWindow.focus();
+            myWindow.document.body.style.backgroundColor = 'aqua'
+
+        }
+
+        function o() {
+            myWindow = window.open('', '', 'width=300,height=200', );
+            myWindow.document.write('<form><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="注册"> ');
+            myWindow.focus();
+            myWindow.document.body.style.backgroundColor = 'khaki'
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="button" value="登录" onclick="openWin()" />
+    <input type="button" value="注册" onclick="o()" />
+    <p>这是主页</p>
+
+</body>
+
+</html>
